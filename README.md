@@ -1,6 +1,8 @@
 # Office Legacy Converter
 
-A GUI tool for Windows that converts old Microsoft Office files to modern formats with full formatting preservation. Designed for anyone with a collection of `.doc`, `.ppt` or `.pps` files from the pre-2007 era who wants to make them usable in modern software without losing layout, images or tables.
+A GUI tool for Windows that converts entire folders of old Microsoft Office files to modern formats in one go — not one file at a time like most online converters, but whole archives including all subfolders.
+
+Designed for anyone with a collection of `.doc`, `.ppt` or `.pps` files from the pre-2007 era who wants to make them usable in modern software without losing layout, images or tables. Point it at a folder, and it handles the rest.
 
 Conversion is handled by the OnlyOffice `x2t` engine, which produces accurate results comparable to opening and re-saving the file in Word or PowerPoint. The tool is available in English and Dutch.
 
@@ -8,13 +10,15 @@ Conversion is handled by the OnlyOffice `x2t` engine, which produces accurate re
 
 ## What it does
 
+- Processes entire folder trees in one run — including all subfolders, recursively
 - Converts `.doc` to `.docx`, `.ppt` to `.pptx`, and `.pps` to `.pptx`
-- Scans a folder and all its subfolders recursively
 - Creates a full backup with identical folder structure and original file timestamps before converting
 - Optionally removes original files after successful conversion (backup is always made first)
 - Detects files case-insensitively, so `.DOC` and `.Doc` are treated the same as `.doc`
 - Saves your settings between sessions (folders, language, preferences)
 - Checks for and installs missing Python dependencies automatically on first run
+
+Most online tools convert a single file per upload. This tool is built for the opposite situation: a hard drive, NAS, or archive folder with dozens or hundreds of old Office files that all need to be migrated at once.
 
 ---
 
